@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-
 const About = () => {
-  return (
-    <section id="about" className="py-16 bg-white">
+  return <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Us</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-blue-600 mx-auto "></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
@@ -72,8 +69,6 @@ const About = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

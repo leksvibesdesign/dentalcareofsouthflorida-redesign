@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-800 text-white py-8">
+  return <footer className="text-white py-8 bg-[#063a3c]">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="mb-6">
@@ -28,8 +25,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

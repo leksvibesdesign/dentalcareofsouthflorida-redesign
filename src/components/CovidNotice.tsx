@@ -1,15 +1,12 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
-
 const CovidNotice = () => {
-  return (
-    <section className="py-16 bg-red-50">
+  return <section className="py-16 bg-green-100">
       <div className="container mx-auto px-4">
         <Card className="max-w-4xl mx-auto border-red-200">
-          <CardHeader className="bg-red-100">
+          <CardHeader className="bg-teal-200">
             <CardTitle className="text-2xl text-red-800 text-center">COVID-19 Update</CardTitle>
           </CardHeader>
           <CardContent className="p-6">
@@ -34,16 +31,13 @@ const CovidNotice = () => {
                   Current Dental Care of South Florida patients experiencing a dental emergency can call us 
                   for further instructions.
                 </p>
-                <Button 
-                  className="bg-yellow-600 hover:bg-yellow-700 text-white"
-                  onClick={() => window.open('tel:305-245-0304')}
-                >
+                <Button className="bg-yellow-600 hover:bg-yellow-700 text-white" onClick={() => window.open('tel:305-245-0304')}>
                   <Phone className="mr-2 h-4 w-4" />
                   Call (305) 245-0304
                 </Button>
               </div>
 
-              <div className="bg-red-100 border-l-4 border-red-500 p-4 rounded">
+              <div className="border-l-4 border-red-500 p-4 rounded bg-slate-100">
                 <p className="font-semibold text-red-800 mb-2">Important Notice:</p>
                 <p className="text-red-700">
                   All other patients: Thank you for your patience during this time. We are closed during 
@@ -55,8 +49,6 @@ const CovidNotice = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CovidNotice;

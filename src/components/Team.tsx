@@ -26,7 +26,7 @@ const Team = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meet Our Providers</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+          <div className="w-24 h-1 mx-auto mb-4" style={{ backgroundColor: '#08A3A8' }}></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Our experienced team of dental professionals is dedicated to providing you with the highest quality care in a comfortable, family-friendly environment.
           </p>
@@ -44,7 +44,7 @@ const Team = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{provider.name}</h3>
-                <p className="text-blue-600 font-medium">{provider.role}</p>
+                <p className="font-medium" style={{ color: '#08A3A8' }}>{provider.role}</p>
               </CardContent>
             </Card>
           ))}

@@ -23,7 +23,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Happy Patients</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+          <div className="w-24 h-1 mx-auto mb-4" style={{ backgroundColor: '#08A3A8' }}></div>
           <p className="text-lg text-gray-600">See what our patients have to say about their experience</p>
         </div>
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
-                <div className="text-blue-600 text-4xl mb-4">"</div>
+                <div className="text-4xl mb-4" style={{ color: '#08A3A8' }}>"</div>
                 <p className="text-gray-700 italic mb-4 leading-relaxed">
                   {testimonial.text}
                 </p>

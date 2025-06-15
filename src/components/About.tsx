@@ -1,11 +1,14 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+
 const About = () => {
-  return <section id="about" className="py-16 bg-white">
+  return (
+    <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Us</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto "></div>
+          <div className="w-24 h-1 mx-auto" style={{ backgroundColor: '#08A3A8' }}></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
@@ -21,21 +24,21 @@ const About = () => {
           <div className="grid grid-cols-3 gap-4 text-center">
             <Card className="p-4">
               <CardContent className="p-0">
-                <div className="text-3xl font-bold text-blue-600 mb-2">20+</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#08A3A8' }}>20+</div>
                 <div className="text-sm text-gray-600">Years of Experience</div>
               </CardContent>
             </Card>
             
             <Card className="p-4">
               <CardContent className="p-0">
-                <div className="text-3xl font-bold text-green-600 mb-2">3,129</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#115A79' }}>3,129</div>
                 <div className="text-sm text-gray-600">Smiling Clients</div>
               </CardContent>
             </Card>
             
             <Card className="p-4">
               <CardContent className="p-0">
-                <div className="text-3xl font-bold text-purple-600 mb-2">7</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#08A3A8' }}>7</div>
                 <div className="text-sm text-gray-600">Happy Staff</div>
               </CardContent>
             </Card>
@@ -49,7 +52,7 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <p className="text-lg text-gray-700 mb-2">We are conveniently located at:</p>
-                <p className="text-xl font-semibold text-blue-600 mb-4">
+                <p className="text-xl font-semibold mb-4" style={{ color: '#08A3A8' }}>
                   127 N.E. 8 Street<br />
                   Homestead, FL 33030
                 </p>
@@ -69,6 +72,8 @@ const About = () => {
           </CardContent>
         </Card>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

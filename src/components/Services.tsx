@@ -39,7 +39,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+          <div className="w-24 h-1 mx-auto mb-4" style={{ backgroundColor: '#08A3A8' }}></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             We provide comprehensive dental care for the whole family with state-of-the-art technology and personalized treatment plans.
           </p>
@@ -49,7 +49,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <CardTitle className="text-xl text-blue-600">{service.title}</CardTitle>
+                <CardTitle className="text-xl" style={{ color: '#08A3A8' }}>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>

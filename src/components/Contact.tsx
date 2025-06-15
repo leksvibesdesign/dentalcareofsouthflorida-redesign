@@ -32,14 +32,14 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+          <div className="w-24 h-1 mx-auto" style={{ backgroundColor: '#08A3A8' }}></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Contact Information */}
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl text-blue-600">Get in Touch</CardTitle>
+              <CardTitle className="text-2xl" style={{ color: '#08A3A8' }}>Get in Touch</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
@@ -82,7 +82,7 @@ const Contact = () => {
           {/* Contact Form */}
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl text-blue-600">Send us a Message</CardTitle>
+              <CardTitle className="text-2xl" style={{ color: '#08A3A8' }}>Send us a Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -132,11 +132,15 @@ const Contact = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#08A3A8] focus:border-transparent"
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button 
+                  type="submit" 
+                  className="w-full text-white hover:opacity-90"
+                  style={{ backgroundColor: '#08A3A8' }}
+                >
                   Send Message
                 </Button>
               </form>
